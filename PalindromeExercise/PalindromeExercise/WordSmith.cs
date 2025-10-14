@@ -8,15 +8,15 @@ public class WordSmith
         {
             return false;
         }
+        string wordLowered = word.ToLower();
         string wordReverse = "";
-        for (int i = word.Length - 1; i >= 0; i--)
+        for (int i = wordLowered.Length - 1; i >= 0; i--)
         {
-            wordReverse += word[i];
+            wordReverse += wordLowered[i];
         }
-        if (word == wordReverse)
+        if (word.ToLower() == wordReverse)
         {
             return true;
-        }
-        else return false;
+        } return false;
     }
 }

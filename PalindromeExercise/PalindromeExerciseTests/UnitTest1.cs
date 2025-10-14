@@ -21,7 +21,7 @@ namespace PalindromeExerciseTests
             // Arrange
             var phrase = new WordSmith();
             // Act
-            var actual = phrase.IsAPalindrome(word.ToLower());
+            var actual = phrase.IsAPalindrome(word);
             // Assert
             Assert.Equal(expected, actual);
         }
